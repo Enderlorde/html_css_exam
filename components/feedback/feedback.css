@@ -1,0 +1,22 @@
+@import url('/components/btn/btn.css');
+
+.feedback{
+    align-items: flex-start;
+}
+
+.feedback input{
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #979797;
+}
+
+.feedback input:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.feedback input::placeholder{
+    font-weight: bold;
+    color: #707070;
+}

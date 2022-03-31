@@ -1,0 +1,15 @@
+.btn{
+    padding: 15px 40px;
+    background-color: #4A4FF2;
+    border: 0;
+
+    font-weight: bold;
+    color: #fff;
+
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}

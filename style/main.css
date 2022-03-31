@@ -1,0 +1,227 @@
+@import url('/components/menu/menu.css');
+@import url('/components/title/title.css');
+@import url('/components/blockquote/blockquote.css');
+@import url('/components/gallery/gallery.css');
+@import url('/components/feedback/feedback.css');
+@import url('/components/table/table.css');
+@import url('/components/showcase/showcase.css');
+@font-face{
+    font-family: "Mulish";
+    font-style: normal;
+    src: url("/fonts/Mulish/Mulish-VariableFont_wght.ttf");
+}
+
+:root{
+    --main-text-font-family: 'Mulish';
+    --additional-text-color: #4A4FF2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--main-text-font-family);
+    font-size: 16px;
+
+    background-color: #F2F2F2;
+}
+/*------------------------------*/
+.service{
+    padding: 90px 0;
+}
+
+.service ul{
+    width: 100%;
+    align-self: stretch;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+.service li{
+    width: 45%;
+    padding: 10px 0;
+}
+
+.service li:nth-of-type(even){
+    margin-left: auto;
+}
+
+.service ul a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #707070;
+}
+/*---------------------------*/
+.awards__container{
+    flex-direction: column;
+    padding: 50px 0;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.awards__container .container__item:not(:last-child){
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.awards__title{
+    flex: 3 3;
+
+    font-size: 22px;
+}
+
+.awards__nominations .nominations:not(:last-child){
+    margin-bottom: 50px;
+}
+/*---------------------------------*/
+.nominations{
+    display: flex;
+    list-style: none;
+}
+
+.nominations__title{
+    flex: 2 2;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nominations__content{
+    flex: 1 1;
+}
+
+.nominations__content h4{
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.nominations__content p{
+    color:#707070;
+}
+
+.nominations__year{
+    flex: 1 1;
+    text-align: right;
+}
+/*-------------------------*/
+.details{
+    margin-bottom: 200px;
+}
+
+.details .container{
+    flex-wrap: wrap;
+    padding-top: 85px;
+}
+
+.details .container__item{
+    margin-bottom: 60px;
+}
+
+.details .container__item_large{
+    flex-direction: column;
+}
+
+.details h2{
+    margin-bottom: 60px;
+}
+
+.details p:not(:last-of-type){
+    margin-bottom: 40px;
+}
+/*-----------------------*/
+
+/*-----------------------*/
+.contact{
+    margin-bottom: 120px;
+}
+
+.contact .container{
+    padding-top: 65px;
+}
+
+.contact .container__item{
+    flex-direction: column;
+}
+
+.contact h2{
+    padding-bottom: 40px;
+}
+
+/*----------------------*/
+.map{
+    margin-bottom: 110px;
+}
+
+.map iframe{
+    border: 0;
+    height: 500px;
+}
+/*------------------*/
+.footer{
+    padding-bottom: 45px;
+}
+
+.footer .container{
+    align-items: center;
+}
+
+.footer__navigation{
+    margin-left: auto;
+}
+
+@media (max-width: 768px){
+    .awards .container__item{
+        flex-direction: column;
+    }
+
+    .awards__title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .nominations{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nominations__title{
+        margin-bottom: 40px;
+    }
+
+    .nominations__year{
+        margin-top: 40px;
+    }
+
+    .details h2{
+        text-align: center;
+    }
+
+    .contact .btn{
+        width:100%;
+    }
+
+    .footer__logo{
+        margin-bottom: 40px;
+    }
+
+    .footer__navigation{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .footer__navigation ul:not(.socials){
+        display: none;
+    }
+}
+
+@media (max-width:426px){
+    body{
+        line-height: 24px;
+    }
+}

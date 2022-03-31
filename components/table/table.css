@@ -1,0 +1,23 @@
+.table{
+    border-collapse: collapse;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table tr:not(:last-child){
+    border-bottom: 1px solid #979797;
+}
+
+.table td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.table td:not(:last-child){
+    padding-right: 10px;
+}
+
+.table__title{
+    color:#707070;
+}

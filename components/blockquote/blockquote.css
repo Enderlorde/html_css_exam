@@ -1,0 +1,13 @@
+.blockquote{
+    font-size: 18px;
+    font-style: italic;
+    color: #979797;
+}
+
+.blockquote::before{
+    content:'';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #979797;
+}

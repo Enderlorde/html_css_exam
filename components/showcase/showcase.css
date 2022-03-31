@@ -1,0 +1,22 @@
+.showcase{
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase img{
+    width: 32%;
+}
+
+@media (max-width:426px){
+    .showcase{
+        flex-direction: column;
+    }
+
+    .showcase img{
+        width: auto;
+    }
+
+    .showcase img:not(:last-child){
+        margin-bottom: 40px;
+    }
+}

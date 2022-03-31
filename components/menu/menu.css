@@ -1,0 +1,79 @@
+@import url('/components/icon/__burger/__burger.css');
+@import url('/components/navigation/navigation.css');
+
+.menu{
+    margin-top: 60px;
+}
+
+.menu__burger{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__switch{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu{
+        position: sticky;
+        top:0;
+        padding: 20px 0;
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+
+    .menu__navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -30%;
+        width: 30%;
+        height: 100vh;
+        background: #4A4FF2;
+        box-shadow: 5px 0 15px#4A4FF2;
+        transition: all 0.5s;
+        z-index: 999;
+    }
+
+    #menu__switch:checked ~ .menu__navigation{
+        right: 0;
+    }
+
+    .menu__navigation ul{
+        flex-direction: column;
+    }
+
+    .menu__navigation li:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    .menu__navigation a,
+    .menu__navigation label{
+        font-weight: bold;
+        font-size: 16px;
+        color:#fff;
+        cursor: pointer;
+    }
+
+    #menu__switch:checked ~ .menu__navigation .navigation__close{
+        display: block;
+    }
+
+    .menu__burger{
+        display: block;
+    }
+}
+
+@media (max-width:426px){
+    .menu__navigation{
+        right: -100%;
+        width: 100%;
+        background-color: #4A4FF2e5;
+    }
+}

@@ -1,0 +1,27 @@
+.navigation{
+    display: flex;
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul:not(:last-child){
+    margin-right: 95px;
+}
+
+.navigation li:not(:last-child){
+    margin-right: 30px;
+}
+
+.navigation a{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation__close{
+    display: none;
+}
