@@ -1,4 +1,4 @@
-@import url('/components/container/container.css');
+@import url('../container/container.css');
 
 .gallery__container{
     display: block;
