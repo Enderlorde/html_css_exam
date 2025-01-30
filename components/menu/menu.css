@@ -1,5 +1,5 @@
-@import url('./components/icon/__burger/__burger.css');
-@import url('./components/navigation/navigation.css');
+@import url('../icon/__burger/__burger.css');
+@import url('../navigation/navigation.css');
 
 .menu{
     margin-top: 60px;

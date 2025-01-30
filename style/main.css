@@ -1,14 +1,14 @@
-@import url('./components/menu/menu.css');
-@import url('./components/title/title.css');
-@import url('./components/blockquote/blockquote.css');
-@import url('./components/gallery/gallery.css');
-@import url('./components/feedback/feedback.css');
-@import url('./components/table/table.css');
-@import url('./components/showcase/showcase.css');
+@import url('../components/menu/menu.css');
+@import url('../components/title/title.css');
+@import url('../components/blockquote/blockquote.css');
+@import url('../components/gallery/gallery.css');
+@import url('../components/feedback/feedback.css');
+@import url('../components/table/table.css');
+@import url('../components/showcase/showcase.css');
 @font-face{
     font-family: "Mulish";
     font-style: normal;
-    src: url("./fonts/Mulish/Mulish-VariableFont_wght.ttf");
+    src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
 }
 
 :root{
