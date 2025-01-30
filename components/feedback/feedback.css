@@ -1,4 +1,4 @@
-@import url('components/btn/btn.css');
+@import url('./components/btn/btn.css');
 
 .feedback{
     align-items: flex-start;
